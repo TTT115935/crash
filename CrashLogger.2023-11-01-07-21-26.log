@@ -1,0 +1,216 @@
+Yvileapsis' Crash Logger version 4.3 at 2023-11-01 07:20:26.3190393
+If this file is empty, then your game didn't crash or something went so wrong even crash logger was useless! :snig:
+Topmost stack module is NOT ALWAYS the crash reason! Exercise caution when speculating!
+
+Exception C0000005 caught!
+
+Calltrace:
+0x1007B6B1 ==> nvse_1_4             (0x0019F960) : ScriptParsing::ScriptIterator::ReadLine+0x51 <== <D:\New Vegas Notes\NVSE\nvse\nvse\ScriptAnalyzer.cpp:160>
+0x100612D6 ==> nvse_1_4             (0x0019FA6C) : FunctionInfo::FunctionInfo+0x286             <== <D:\New Vegas Notes\NVSE\nvse\nvse\FunctionScripts.cpp:401>
+0x10060FBE ==> nvse_1_4             (0x0019FA80) : UserFunctionManager::GetFunctionInfo+0x8E    <== <D:\New Vegas Notes\NVSE\nvse\nvse\FunctionScripts.cpp:279>
+0x10060D7B ==> nvse_1_4             (0x0019FAC0) : UserFunctionManager::Call+0xAB               <== <D:\New Vegas Notes\NVSE\nvse\nvse\FunctionScripts.cpp:229>
+0x1006E90A ==> nvse_1_4             (0x0019FB18) : HandleCallWhenScripts+0xDA                   <== <D:\New Vegas Notes\NVSE\nvse\nvse\Hooks_Gameplay.cpp:199>
+0x1006F914 ==> nvse_1_4             (0x0019FB3C) : HandleMainLoopHook+0x214                     <== <D:\New Vegas Notes\NVSE\nvse\nvse\Hooks_Gameplay.cpp:610>
+0x1006E365 ==> nvse_1_4             (0x0019FEC0) : MainLoopHook+0x5                             <== <D:\New Vegas Notes\NVSE\nvse\nvse\Hooks_Gameplay.cpp:46>
+0x100021E4 ==> nvse_steam_loader    (0x0019FEE0) : EntryPoint+0xFFFFFFFF
+0x00ECC470 ==> FalloutNV            (0x0019FF70) : EntryPoint+0xFFFFFFFF
+0x1001FCC9 ==> KERNEL32             (0x0019FF80) : BaseThreadInitThunk+0x19
+0x10067C6E ==> ntdll                (0x0019FFDC) : RtlGetAppContainerNamedObjectPath+0x11E
+0x10067C3E ==> ntdll                (0x0019FFEC) : RtlGetAppContainerNamedObjectPath+0xEE
+
+Registry:
+REG |    VALUE   | DEREFERENCE INFO
+eax | 0x00000000 | 
+ebx | 0x341E3FD5 | 
+ecx | 0x341E4001 | 
+edx | 0x0019FA2C | 
+edi | 0x00000000 | 
+esi | 0x341E3FFF | 
+ebp | 0x0019FA6C | 
+esp | 0x0019F960 | 
+eip | 0x0C87B6B1 | 
+
+Stack:
+ # |    VALUE   | DEREFERENCE INFO
+ 0 | 0x0019FA46 | 
+ 1 | 0x0C8612D6 | 
+ 2 | 0x39C91240 | RTTI: Script: FF001FA6 (), Source: , failed to format
+ 3 | 0x7F351458 | 
+ 4 | 0x39C91240 | RTTI: Script: FF001FA6 ()
+ 5 | 0x3B16B340 | RTTI: TESObjectREFR: 030122C5 (NVDLC03JukeboxREF), Baseform 3D0F7180
+ 6 | 0x00000000 | 
+ 7 | 0x150DC344 | 
+ 8 | 0x552AED68 | 
+10 | 0x39C92C60 | RTTI: Script: FF001F7D (), Source: Decompiled script to 'DecompiledScripts\Crash Logger\UnknownScript2.gek'
+11 | 0x3B16B340 | RTTI: TESObjectREFR: 030122C5 (NVDLC03JukeboxREF), Baseform 3D0F7180
+29 | 0x39C929C0 | RTTI: Script: FF001F89 (), Source: Decompiled script to 'DecompiledScripts\Crash Logger\UnknownScript3.gek'
+35 | 0x39C91240 | RTTI: Script: FF001FA6 ()
+45 | 0x39C91240 | RTTI: Script: FF001FA6 ()
+4A | 0x39C91240 | RTTI: Script: FF001FA6 ()
+5E | 0x39C92C60 | RTTI: Script: FF001F7D ()
+5F | 0x3B16B340 | RTTI: TESObjectREFR: 030122C5 (NVDLC03JukeboxREF), Baseform 3D0F7180
+63 | 0x39C91240 | RTTI: Script: FF001FA6 ()
+64 | 0x1884459C | RTTI: PlayerCharacter: 00000014 (PlayerRef), Baseform 4A00B000
+83 | 0x0E000CB0 | RTTI: BSSimpleArray<const char*>
+90 | 0x0E000CB0 | RTTI: BSSimpleArray<const char*>
+91 | 0x0E000CB0 | RTTI: BSSimpleArray<const char*>
+BE | 0x0019FD50 | -\_(?)_/-: 0x01082860
+
+Module bases:
+0x6DCB0000 - 0x6DCD1000 ==> CSERHelper,                                            C:/Program Files (x86)/Steam/CSERHelper.dll
+0x6D010000 - 0x6D160000 ==> gameoverlayrenderer,                                   C:/Program Files (x86)/Steam/gameoverlayrenderer.dll
+0x6CF10000 - 0x6D009000 ==> steam,                                                 C:/Program Files (x86)/Steam/steam.dll
+0x038C0000 - 0x038D7000 ==> ActorCauseSaveBloatFix,     NVSE plugin version:    1, C:/Program Files (x86)/Steam/steamapps/common/Fallout New Vegas/Data/NVSE/Plugins/ActorCauseSaveBloatFix.dll
+0x0BF80000 - 0x0BFAF000 ==> AnhNVSE,                    NVSE plugin version:  131, C:/Program Files (x86)/Steam/steamapps/common/Fallout New Vegas/Data/NVSE/Plugins/AnhNVSE.dll
+0x0C960000 - 0x0C9F6000 ==> CrashLogger,                NVSE plugin version:  430, C:/Program Files (x86)/Steam/steamapps/common/Fallout New Vegas/Data/NVSE/Plugins/CrashLogger.dll
+0x0BFC0000 - 0x0BFD7000 ==> DoF-Fix,                                               C:/Program Files (x86)/Steam/steamapps/common/Fallout New Vegas/Data/NVSE/Plugins/DoF-Fix.dll
+0x0CA00000 - 0x0CA16000 ==> HDPipboy,                   NVSE plugin version:    1, C:/Program Files (x86)/Steam/steamapps/common/Fallout New Vegas/Data/NVSE/Plugins/HDPipboy.dll
+0x0CCD0000 - 0x0CD02000 ==> MCM,                        NVSE plugin version:    1, C:/Program Files (x86)/Steam/steamapps/common/Fallout New Vegas/Data/NVSE/Plugins/MCM.dll
+0x0CD90000 - 0x0CDBF000 ==> NVTF,                       NVSE plugin version:   10, C:/Program Files (x86)/Steam/steamapps/common/Fallout New Vegas/Data/NVSE/Plugins/NVTF.dll
+0x0D500000 - 0x0D63A000 ==> ShowOffNVSE,                NVSE plugin version:  175, C:/Program Files (x86)/Steam/steamapps/common/Fallout New Vegas/Data/NVSE/Plugins/ShowOffNVSE.dll
+0x0CA20000 - 0x0CA7F000 ==> improved_console,           NVSE plugin version:    1, C:/Program Files (x86)/Steam/steamapps/common/Fallout New Vegas/Data/NVSE/Plugins/improved_console.dll
+0x0CA90000 - 0x0CB13000 ==> jip_nvse,                   NVSE plugin version: 5721, C:/Program Files (x86)/Steam/steamapps/common/Fallout New Vegas/Data/NVSE/Plugins/jip_nvse.dll
+0x0CB30000 - 0x0CB82000 ==> johnnyguitar,               NVSE plugin version:  496, C:/Program Files (x86)/Steam/steamapps/common/Fallout New Vegas/Data/NVSE/Plugins/johnnyguitar.dll
+0x0CBA0000 - 0x0CC19000 ==> kNVSE,                      NVSE plugin version:   20, C:/Program Files (x86)/Steam/steamapps/common/Fallout New Vegas/Data/NVSE/Plugins/kNVSE.dll
+0x0CC30000 - 0x0CCB7000 ==> knvse_jsongenerator,                                   C:/Program Files (x86)/Steam/steamapps/common/Fallout New Vegas/Data/NVSE/Plugins/knvse_jsongenerator.dll
+0x0CD40000 - 0x0CD47000 ==> mlf,                                                   C:/Program Files (x86)/Steam/steamapps/common/Fallout New Vegas/Data/NVSE/Plugins/mlf.dll
+0x6C780000 - 0x6C786000 ==> nvse_console_autocomplete,                              C:/Program Files (x86)/Steam/steamapps/common/Fallout New Vegas/Data/NVSE/Plugins/nvse_console_autocomplete.dll
+0x0CDE0000 - 0x0CE48000 ==> nvse_console_clipboard,     NVSE plugin version:    2, C:/Program Files (x86)/Steam/steamapps/common/Fallout New Vegas/Data/NVSE/Plugins/nvse_console_clipboard.dll
+0x0CE50000 - 0x0CF3C000 ==> nvse_stewie_tweaks,         NVSE plugin version:  875, C:/Program Files (x86)/Steam/steamapps/common/Fallout New Vegas/Data/NVSE/Plugins/nvse_stewie_tweaks.dll
+0x0CF50000 - 0x0CFA0000 ==> sound_extender,                                        C:/Program Files (x86)/Steam/steamapps/common/Fallout New Vegas/Data/NVSE/Plugins/sound_extender.dll
+0x0D640000 - 0x0D76F000 ==> supNVSE,                    NVSE plugin version:  851, C:/Program Files (x86)/Steam/steamapps/common/Fallout New Vegas/Data/NVSE/Plugins/supNVSE.dll
+0x0CFC0000 - 0x0CFCB000 ==> ui_organizer,               NVSE plugin version:  230, C:/Program Files (x86)/Steam/steamapps/common/Fallout New Vegas/Data/NVSE/Plugins/ui_organizer.dll
+0x0CFE0000 - 0x0CFE6000 ==> weapon_lag_fix,                                        C:/Program Files (x86)/Steam/steamapps/common/Fallout New Vegas/Data/NVSE/Plugins/weapon_lag_fix.dll
+0x00400000 - 0x0147B000 ==> FalloutNV,                                             C:/Program Files (x86)/Steam/steamapps/common/Fallout New Vegas/FalloutNV.exe
+0x18000000 - 0x18068000 ==> binkw32,                                               C:/Program Files (x86)/Steam/steamapps/common/Fallout New Vegas/binkw32.dll
+0x03250000 - 0x03383000 ==> libvorbis,                                             C:/Program Files (x86)/Steam/steamapps/common/Fallout New Vegas/libvorbis.dll
+0x10000000 - 0x1001E000 ==> libvorbisfile,                                         C:/Program Files (x86)/Steam/steamapps/common/Fallout New Vegas/libvorbisfile.dll
+0x0C800000 - 0x0C953000 ==> nvse_1_4,                                              C:/Program Files (x86)/Steam/steamapps/common/Fallout New Vegas/nvse_1_4.dll
+0x6DC60000 - 0x6DC8D000 ==> nvse_steam_loader,                                     C:/Program Files (x86)/Steam/steamapps/common/Fallout New Vegas/nvse_steam_loader.dll
+0x3B400000 - 0x3B41D000 ==> steam_api,                                             C:/Program Files (x86)/Steam/steamapps/common/Fallout New Vegas/steam_api.dll
+0x6EB50000 - 0x6FE1F000 ==> steamclient,                                           C:/Program Files (x86)/Steam/steamclient.dll
+0x73190000 - 0x7322A000 ==> tier0_s,                                               C:/Program Files (x86)/Steam/tier0_s.dll
+0x72C30000 - 0x72CB8000 ==> vstdlib_s,                                             C:/Program Files (x86)/Steam/vstdlib_s.dll
+0x8F170000 - 0x8F2F8000 ==> nvse_dbghelp,                                          C:/Users/fallo/AppData/Local/Temp/nvse_dbghelp.dll
+0x6E620000 - 0x6E756000 ==> AUDIOSES,                                              C:/Windows/SYSTEM32/AUDIOSES.DLL
+0x6D3B0000 - 0x6D635000 ==> AcLayers,                                              C:/Windows/SYSTEM32/AcLayers.DLL
+0x74980000 - 0x7498A000 ==> CRYPTBASE,                                             C:/Windows/SYSTEM32/CRYPTBASE.DLL
+0x6E060000 - 0x6E06C000 ==> ColorAdapterClient,                                    C:/Windows/SYSTEM32/ColorAdapterClient.dll
+0x74260000 - 0x742FB000 ==> CoreMessaging,                                         C:/Windows/SYSTEM32/CoreMessaging.dll
+0x74300000 - 0x7457F000 ==> CoreUIComponents,                                      C:/Windows/SYSTEM32/CoreUIComponents.dll
+0x71480000 - 0x714A9000 ==> DEVOBJ,                                                C:/Windows/SYSTEM32/DEVOBJ.dll
+0x71670000 - 0x716A7000 ==> DINPUT8,                                               C:/Windows/SYSTEM32/DINPUT8.dll
+0x6E9D0000 - 0x6EA4F000 ==> DSOUND,                                                C:/Windows/SYSTEM32/DSOUND.dll
+0x6CD80000 - 0x6CF08000 ==> DbgHelp,                                               C:/Windows/SYSTEM32/DbgHelp.dll
+0x716B0000 - 0x716BA000 ==> HID,                                                   C:/Windows/SYSTEM32/HID.DLL
+0x747E0000 - 0x74812000 ==> IPHLPAPI,                                              C:/Windows/SYSTEM32/IPHLPAPI.DLL
+0x6DD20000 - 0x6DD39000 ==> MPR,                                                   C:/Windows/SYSTEM32/MPR.dll
+0x6E550000 - 0x6E569000 ==> MSACM32,                                               C:/Windows/SYSTEM32/MSACM32.DLL
+0x74720000 - 0x7472E000 ==> MSASN1,                                                C:/Windows/SYSTEM32/MSASN1.dll
+0x6C7B0000 - 0x6C81D000 ==> MSVCP140,                                              C:/Windows/SYSTEM32/MSVCP140.dll
+0x74F20000 - 0x74F72000 ==> MSWSOCK,                                               C:/Windows/SYSTEM32/MSWSOCK.dll
+0x714B0000 - 0x71572000 ==> PROPSYS,                                               C:/Windows/SYSTEM32/PROPSYS.dll
+0x65540000 - 0x65569000 ==> RTWorkQ,                                               C:/Windows/SYSTEM32/RTWorkQ.DLL
+0x6EB40000 - 0x6EB4A000 ==> Secur32,                                               C:/Windows/SYSTEM32/Secur32.dll
+0x6EB10000 - 0x6EB31000 ==> SspiCli,                                               C:/Windows/SYSTEM32/SspiCli.dll
+0x740B0000 - 0x74145000 ==> TextShaping,                                           C:/Windows/SYSTEM32/TextShaping.dll
+0x6EA50000 - 0x6EA5D000 ==> UMPDC,                                                 C:/Windows/SYSTEM32/UMPDC.dll
+0x6E5F0000 - 0x6E615000 ==> USERENV,                                               C:/Windows/SYSTEM32/USERENV.dll
+0x6C790000 - 0x6C7A5000 ==> VCRUNTIME140,                                          C:/Windows/SYSTEM32/VCRUNTIME140.dll
+0x74F90000 - 0x74F98000 ==> VERSION,                                               C:/Windows/SYSTEM32/VERSION.dll
+0x74A10000 - 0x74E65000 ==> WININET,                                               C:/Windows/SYSTEM32/WININET.dll
+0x73380000 - 0x733A8000 ==> WINMM,                                                 C:/Windows/SYSTEM32/WINMM.dll
+0x6D330000 - 0x6D3A6000 ==> WINSPOOL,                                              C:/Windows/SYSTEM32/WINSPOOL.DRV
+0x74F80000 - 0x74F88000 ==> WSOCK32,                                               C:/Windows/SYSTEM32/WSOCK32.dll
+0x70B70000 - 0x70B94000 ==> Wldp,                                                  C:/Windows/SYSTEM32/Wldp.dll
+0x014F0000 - 0x01506000 ==> XINPUT1_3,                                             C:/Windows/SYSTEM32/XINPUT1_3.dll
+0x6D640000 - 0x6D6DF000 ==> apphelp,                                               C:/Windows/SYSTEM32/apphelp.dll
+0x6E870000 - 0x6E878000 ==> avrt,                                                  C:/Windows/SYSTEM32/avrt.dll
+0x74700000 - 0x74713000 ==> cryptsp,                                               C:/Windows/SYSTEM32/cryptsp.dll
+0x6CBF0000 - 0x6CD7F000 ==> d3d9,                                                  C:/Windows/SYSTEM32/d3d9.dll
+0x6C820000 - 0x6CBE8000 ==> d3dx9_38,                                              C:/Windows/SYSTEM32/d3dx9_38.dll
+0x6C410000 - 0x6C60F000 ==> d3dx9_43,                                              C:/Windows/SYSTEM32/d3dx9_43.dll
+0x6DCE0000 - 0x6DD0B000 ==> dbgcore,                                               C:/Windows/SYSTEM32/dbgcore.DLL
+0x707E0000 - 0x70944000 ==> dcomp,                                                 C:/Windows/SYSTEM32/dcomp.dll
+0x711C0000 - 0x711E6000 ==> dwmapi,                                                C:/Windows/SYSTEM32/dwmapi.dll
+0x6DBD0000 - 0x6DBFC000 ==> dxcore,                                                C:/Windows/SYSTEM32/dxcore.dll
+0x65530000 - 0x6553A000 ==> imaadp32,                                              C:/Windows/SYSTEM32/imaadp32.acm
+0x71580000 - 0x7166D000 ==> inputhost,                                             C:/Windows/SYSTEM32/inputhost.dll
+0x74640000 - 0x7464F000 ==> kernel.appcore,                                        C:/Windows/SYSTEM32/kernel.appcore.dll
+0x6E860000 - 0x6E867000 ==> ksuser,                                                C:/Windows/SYSTEM32/ksuser.dll
+0x65570000 - 0x656E9000 ==> mfplat,                                                C:/Windows/SYSTEM32/mfplat.DLL
+0x6E540000 - 0x6E548000 ==> midimap,                                               C:/Windows/SYSTEM32/midimap.dll
+0x6E570000 - 0x6E57A000 ==> msacm32,                                               C:/Windows/SYSTEM32/msacm32.drv
+0x65520000 - 0x65529000 ==> msadp32,                                               C:/Windows/SYSTEM32/msadp32.acm
+0x6E070000 - 0x6E103000 ==> mscms,                                                 C:/Windows/SYSTEM32/mscms.dll
+0x65AA0000 - 0x65AA9000 ==> msdmo,                                                 C:/Windows/SYSTEM32/msdmo.dll
+0x65510000 - 0x65518000 ==> msg711,                                                C:/Windows/SYSTEM32/msg711.acm
+0x65500000 - 0x6550B000 ==> msgsm32,                                               C:/Windows/SYSTEM32/msgsm32.acm
+0x77310000 - 0x774B4000 ==> ntdll,                                                 C:/Windows/SYSTEM32/ntdll.dll
+0x74230000 - 0x74259000 ==> ntmarta,                                               C:/Windows/SYSTEM32/ntmarta.dll
+0x6EA60000 - 0x6EAA4000 ==> powrprof,                                              C:/Windows/SYSTEM32/powrprof.dll
+0x6DC90000 - 0x6DC9F000 ==> resourcepolicyclient,                                  C:/Windows/SYSTEM32/resourcepolicyclient.dll
+0x66680000 - 0x66683000 ==> sfc,                                                   C:/Windows/SYSTEM32/sfc.dll
+0x6DD10000 - 0x6DD20000 ==> sfc_os,                                                C:/Windows/SYSTEM32/sfc_os.DLL
+0x74580000 - 0x7463A000 ==> textinputframework,                                    C:/Windows/SYSTEM32/textinputframework.dll
+0x70570000 - 0x70704000 ==> twinapi.appcore,                                       C:/Windows/SYSTEM32/twinapi.appcore.dll
+0x6E880000 - 0x6E8BA000 ==> wdmaud,                                                C:/Windows/SYSTEM32/wdmaud.drv
+0x70BA0000 - 0x711B3000 ==> windows.storage,                                       C:/Windows/SYSTEM32/windows.storage.dll
+0x6E9B0000 - 0x6E9CD000 ==> winmmbase,                                             C:/Windows/SYSTEM32/winmmbase.dll
+0x74150000 - 0x7422C000 ==> wintypes,                                              C:/Windows/SYSTEM32/wintypes.dll
+0x76250000 - 0x762CB000 ==> ADVAPI32,                                              C:/Windows/System32/ADVAPI32.dll
+0x77200000 - 0x772FF000 ==> CRYPT32,                                               C:/Windows/System32/CRYPT32.dll
+0x51100000 - 0x53131000 ==> igc32,                                                 C:/Windows/System32/DriverStore/FileRepository/iigd_dch.inf_amd64_ada2367baaae74c0/igc32.dll
+0x68210000 - 0x6C404000 ==> igd9dxva32,                                            C:/Windows/System32/DriverStore/FileRepository/iigd_dch.inf_amd64_ada2367baaae74c0/igd9dxva32.dll
+0x680D0000 - 0x68207000 ==> igdgmm32,                                              C:/Windows/System32/DriverStore/FileRepository/iigd_dch.inf_amd64_ada2367baaae74c0/igdgmm32.dll
+0x680B0000 - 0x680CF000 ==> igdinfo32,                                             C:/Windows/System32/DriverStore/FileRepository/iigd_dch.inf_amd64_ada2367baaae74c0/igdinfo32.dll
+0x6D1F0000 - 0x6D32C000 ==> igdumdim32,                                            C:/Windows/System32/DriverStore/FileRepository/iigd_dch.inf_amd64_ada2367baaae74c0/igdumdim32.dll
+0x75AA0000 - 0x75AC4000 ==> GDI32,                                                 C:/Windows/System32/GDI32.dll
+0x75D90000 - 0x75DB5000 ==> IMM32,                                                 C:/Windows/System32/IMM32.DLL
+0x76E00000 - 0x76EF0000 ==> KERNEL32,                                              C:/Windows/System32/KERNEL32.DLL
+0x757A0000 - 0x759DA000 ==> KERNELBASE,                                            C:/Windows/System32/KERNELBASE.dll
+0x6E8C0000 - 0x6E92B000 ==> MMDevApi,                                              C:/Windows/System32/MMDevApi.dll
+0x0E740000 - 0x0E814000 ==> MSCTF,                                                 C:/Windows/System32/MSCTF.dll
+0x77010000 - 0x770A6000 ==> OLEAUT32,                                              C:/Windows/System32/OLEAUT32.dll
+0x75E90000 - 0x75E96000 ==> PSAPI,                                                 C:/Windows/System32/PSAPI.DLL
+0x759E0000 - 0x75A9F000 ==> RPCRT4,                                                C:/Windows/System32/RPCRT4.dll
+0x75290000 - 0x756C8000 ==> SETUPAPI,                                              C:/Windows/System32/SETUPAPI.dll
+0x76840000 - 0x76DF7000 ==> SHELL32,                                               C:/Windows/System32/SHELL32.dll
+0x756D0000 - 0x75715000 ==> SHLWAPI,                                               C:/Windows/System32/SHLWAPI.dll
+0x75EA0000 - 0x7603C000 ==> USER32,                                                C:/Windows/System32/USER32.dll
+0x75DC0000 - 0x75E0C000 ==> WINTRUST,                                              C:/Windows/System32/WINTRUST.dll
+0x65820000 - 0x6585D000 ==> WMASF,                                                 C:/Windows/System32/WMASF.DLL
+0x65860000 - 0x65A6D000 ==> WMVCore,                                               C:/Windows/System32/WMVCore.DLL
+0x761E0000 - 0x76243000 ==> WS2_32,                                                C:/Windows/System32/WS2_32.dll
+0x6E3C0000 - 0x6E433000 ==> WindowManagementAPI,                                   C:/Windows/System32/WindowManagementAPI.dll
+0x653C0000 - 0x653F1000 ==> Windows.Internal.Graphics.Display.DisplayColorManagement,                              C:/Windows/System32/Windows.Internal.Graphics.Display.DisplayColorManagement.dll
+0x6E440000 - 0x6E533000 ==> Windows.UI,                                            C:/Windows/System32/Windows.UI.dll
+0x766B0000 - 0x766C9000 ==> bcrypt,                                                C:/Windows/System32/bcrypt.dll
+0x76EF0000 - 0x76F4F000 ==> bcryptPrimitives,                                      C:/Windows/System32/bcryptPrimitives.dll
+0x76670000 - 0x766AB000 ==> cfgmgr32,                                              C:/Windows/System32/cfgmgr32.dll
+0x76560000 - 0x765DE000 ==> clbcatq,                                               C:/Windows/System32/clbcatq.dll
+0x762D0000 - 0x76550000 ==> combase,                                               C:/Windows/System32/combase.dll
+0x65AB0000 - 0x65AC8000 ==> devenum,                                               C:/Windows/System32/devenum.dll
+0x75AD0000 - 0x75BB8000 ==> gdi32full,                                             C:/Windows/System32/gdi32full.dll
+0x766D0000 - 0x766E9000 ==> imagehlp,                                              C:/Windows/System32/imagehlp.dll
+0x654E0000 - 0x654F5000 ==> l3codeca,                                              C:/Windows/System32/l3codeca.acm
+0x65710000 - 0x65816000 ==> mfperfhelper,                                          C:/Windows/System32/mfperfhelper.dll
+0x656F0000 - 0x65707000 ==> mp3dmod,                                               C:/Windows/System32/mp3dmod.dll
+0x65400000 - 0x654D4000 ==> msmpeg2adec,                                           C:/Windows/System32/msmpeg2adec.dll
+0x75E10000 - 0x75E8B000 ==> msvcp_win,                                             C:/Windows/System32/msvcp_win.dll
+0x76780000 - 0x7683F000 ==> msvcrt,                                                C:/Windows/System32/msvcrt.dll
+0x77110000 - 0x771F3000 ==> ole32,                                                 C:/Windows/System32/ole32.dll
+0x65A70000 - 0x65A92000 ==> qasf,                                                  C:/Windows/System32/qasf.dll
+0x65AD0000 - 0x65C6A000 ==> quartz,                                                C:/Windows/System32/quartz.dll
+0x76040000 - 0x760B6000 ==> sechost,                                               C:/Windows/System32/sechost.dll
+0x766F0000 - 0x76777000 ==> shcore,                                                C:/Windows/System32/shcore.dll
+0x760C0000 - 0x761E0000 ==> ucrtbase,                                              C:/Windows/System32/ucrtbase.dll
+0x75720000 - 0x75738000 ==> win32u,                                                C:/Windows/System32/win32u.dll
+0x6D160000 - 0x6D1ED000 ==> COMCTL32,                                              C:/Windows/WinSxS/x86_microsoft.windows.common-controls_6595b64144ccf1df_5.82.19041.3570_none_c0ddcb7e38bd1f11/COMCTL32.dll
+0x6C610000 - 0x6C777000 ==> gdiplus,                                               C:/Windows/WinSxS/x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.19041.3570_none_d95353f5e10286ee/gdiplus.dll
+0x74990000 - 0x74A04000 ==> uxtheme,                                               C:/Windows/system32/uxtheme.dll
+
+GAME CRASHED AT INSTRUCTION Base+0x0007B6B1 IN MODULE: C:\Program Files (x86)\Steam\steamapps\common\Fallout New Vegas\nvse_1_4.dll
+Please note that this does not automatically mean that that module is responsible. It may have been supplied bad data or
+program state as the result of an issue in the base game or a different DLL.
+
